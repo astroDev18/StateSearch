@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
-/* TODO: Develop a program that asks the user to enter a capital for a U.S State and the program reports
-        if the user entered a valid capital. */
+/*******************************************************************************************************************************************************************
+ * (Guess the state capital)
+ * Develop a program that asks the user to enter a capital for a U.S. state. Upon receiving the user input, the program reports whether the user input is correct.
+ * For this application, the 50 states and their capitals are stored in a two-dimensional array in order by state name.
+ * Display the current contents of the array then use a bubble sort to sort the content by capital.
+ *  Next, prompt the user to enter answers for all the state capitals and then display the total correct count. The user's answer is not case-sensitive.
+ *******************************************************************************************************************************************************************/
 public class part1 {
     public static void main(String[] args) {
         // Initialize array to store states and capitals
@@ -21,7 +26,7 @@ public class part1 {
         // Loop until user exits
         for (String[] stateName : stateNames) {
             System.out.println("Guess the capital of " + stateName[0] + ".");
-            String userCapitalInput = input.nextLine();
+            String userCapitalInput = input.nextLine().toLowerCase();
 
             if (isEqual(stateName[1], userCapitalInput)) {
                 System.out.println("Your answer is correct");
@@ -98,32 +103,31 @@ public class part1 {
     // Stores all 50 states and capitals in a two-dimensional array, in order by state name. Same as previous array
     // I just used a second one to handle the game functionality.
     public static String[][] getStateData() {
-
         String[][] stateNames = {
-                {"Alabama", "Montgomery"}, {"Alaska", "Juneau"}, {"Arizona", "Phoenix"},
-                {"Arkansas", "Little Rock"}, {"California", "Sacramento"},
-                {"Colorado", "Denver"}, {"Connecticut", "Hartford"},
-                {"Delaware", "Dover"}, {"Florida", "Tallahassee"},
-                {"Georgia", "Atlanta"}, {"Hawaii", "Honolulu"}, {"Idaho", "Boise"},
-                {"Illinois", "Springfield"}, {"Indiana", "Indianapolis"},
-                {"Iowa Des", "Moines"}, {"Kansas", "Topeka"}, {"Kentucky", "Frankfort"},
-                {"Louisiana", "Baton Rouge"}, {"Maine", "Augusta"},
-                {"Maryland", "Annapolis"}, {"Massachusetts", "Boston"},
-                {"Michigan", "Lansing"}, {"Minnesota", "Saint Paul"},
-                {"Mississippi", "Jackson"}, {"Missouri", "Jefferson City"},
-                {"Montana", "Helena"}, {"Nebraska", "Lincoln"},
-                {"Nevada	", "Carson City"}, {"New Hampshire", "Concord"},
-                {"New Jersey", "Trenton"}, {"New Mexico", "Santa Fe"},
-                {"New York", "Albany"}, {"North Carolina", "Raleigh"},
-                {"North Dakota", "Bismarck"}, {"Ohio", "Columbus"},
-                {"Oklahoma", "Oklahoma City"}, {"Oregon", "Salem"},
-                {"Pennsylvania", "Harrisburg"}, {"Rhode Island", "Providence"},
-                {"South Carolina", "Columbia"}, {"South Dakota", "Pierre"},
-                {"Tennessee", "Nashville"}, {"Texas", "Austin"},
-                {"Utah", "Salt Lake City"}, {"Vermont", "Montpelier"},
-                {"Virginia", "Richmond"}, {"Washington", "Olympia"},
-                {"West Virginia", "Charleston"}, {"Wisconsin", "Madison"},
-                {"Wyoming", "Cheyenne"}};
+                {"Alabama", "montgomery"}, {"Alaska", "juneau"}, {"Arizona", "phoenix"},
+                {"Arkansas", "little Rock"}, {"California", "sacramento"},
+                {"Colorado", "denver"}, {"Connecticut", "hartford"},
+                {"Delaware", "dover"}, {"Florida", "tallahassee"},
+                {"Georgia", "atlanta"}, {"Hawaii", "honolulu"}, {"Idaho", "boise"},
+                {"Illinois", "springfield"}, {"Indiana", "indianapolis"},
+                {"Iowa Des", "moines"}, {"Kansas", "topeka"}, {"Kentucky", "frankfort"},
+                {"Louisiana", "baton Rouge"}, {"Maine", "augusta"},
+                {"Maryland", "aanapolis"}, {"Massachusetts", "boston"},
+                {"Michigan", "lansing"}, {"Minnesota", "saint paul"},
+                {"Mississippi", "jackson"}, {"Missouri", "jefferson city"},
+                {"Montana", "helena"}, {"Nebraska", "lincoln"},
+                {"Nevada	", "carson city"}, {"new hampshire", "concord"},
+                {"New Jersey", "trenton"}, {"new mexico", "santa fe"},
+                {"New York", "albany"}, {"North Carolina", "raleigh"},
+                {"North Dakota", "bismarck"}, {"Ohio", "columbus"},
+                {"Oklahoma", "Oklahoma city"}, {"Oregon", "salem"},
+                {"Pennsylvania", "harrisburg"}, {"Rhode Island", "providence"},
+                {"South Carolina", "columbia"}, {"South Dakota", "pierre"},
+                {"Tennessee", "nashville"}, {"Texas", "austin"},
+                {"Utah", "salt lake city"}, {"Vermont", "montpelier"},
+                {"Virginia", "richmond"}, {"Washington", "olympia"},
+                {"West Virginia", "charleston"}, {"Wisconsin", "madison"},
+                {"Wyoming", "cheyenne"}};
         return stateNames;
     }
 }

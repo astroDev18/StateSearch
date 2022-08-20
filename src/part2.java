@@ -2,7 +2,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
-
+/*******************************************************************************************************************************
+ * (Output state capitals using a Map)
+ * store the pairs of each state and its capital in a Map using the HashMap function
+ * Display the content of the Map, then use the TreeMap class to sort the map while using a binary search tree for storage
+ * Next, your program should prompt the user to enter a state and it should then display the capital for the state.
+ *******************************************************************************************************************************/
 public class part2 {
     public static void main(String[] args) {
         // Initialize Map to store states and capitals
