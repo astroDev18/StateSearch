@@ -5,7 +5,7 @@ In the second file it allowed you to input the state and then output the capital
 
 # Project Requirements
 
-![SortingArrays](https://media.discordapp.net/attachments/755504752011378822/1010517220490756116/unknown.png/200x150 "Sorting Arrays Program")
+![SortingArrays](https://media.discordapp.net/attachments/755504752011378822/1010517220490756116/unknown.png "Sorting Arrays Program")
 
 ## Sorting Arrays Pt.1
 * Develop a program that asks the user to enter a capital for a U.S. state. 
@@ -14,7 +14,7 @@ In the second file it allowed you to input the state and then output the capital
 * Display the current contents of the array then use a bubble sort to sort the content by capital.
 * Next, prompt the user to enter answers for all the state capitals and then display the total correct count. 
 
-![SortingArrays](https://media.discordapp.net/attachments/755504752011378822/1010517589123932231/unknown.png/200x150 "Sorting Arrays Program")
+![SortingArrays](https://media.discordapp.net/attachments/755504752011378822/1010517589123932231/unknown.png "Sorting Arrays Program")
 
 ## Sorting & Searching HashMap Pt.2
 * Now revise the code to store the pairs of each state and its capital in a Map using the HashMap function.
